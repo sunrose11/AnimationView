@@ -24,10 +24,10 @@ class AnimationModel: NSObject {
     func show(view:UIView,changeView:UIView,type:AnimationType){
         switch type {
         case .animationZoom:
-            changeView.layer.setValue(-1, forKey: "transform.scale")
+            changeView.layer.setValue(0, forKey: "transform.scale")
             UIView.animate(withDuration: 0.75, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
                 changeView.layer.position = view.center
-                changeView.layer.setValue(1.2, forKey: "transform.scale")
+                changeView.layer.setValue(1.0, forKey: "transform.scale")
             }, completion: nil)
             break
         case .topToCenterSpring:
