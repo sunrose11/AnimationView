@@ -1,5 +1,6 @@
 ＃弹窗抖动效果
-！[你的小可爱已上线（http://upload-images.jianshu.io/upload_images/7882691-886183f3a8e30c93.GIF?imageMogr2/auto-orient/strip）
+
+![你的小可爱已上线](http://upload-images.jianshu.io/upload_images/7882691-886183f3a8e30c93.GIF?imageMogr2/auto-orient/strip)
 >效果弹窗不想弹出那么单调，我们可以进行一些小的动画效果，让页面更加鲜活
 
 动画效果中我选择用的是`UIView`动画，弹性动画方法`animateWithDuration: delay: usingSpringWithDamping: initialSpringVelocity: options: animations`实现页面抖动效果，设定`view`初始位置和动画过程位置完成出场动画和结束动画效果，当`usingSpringWithDamping`的范围为0.0f到1.0f，数值越小「弹簧」的振动效果越明显,`initialSpringVelocity`则表示初始的速度，数值越大一开始移动越快，就是形变的速度，从视觉上看可以理解弹簧的形变速度，到动画结束，该速度减为0。
